@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVEEN FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" id="form">
+        <h3>Register</h3>
+
+        <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" placeholder="Username" id="username" oninput="validateuser()">
+        <div class="error"></div>
+        </div>
+        <br>
+
+        <div class="input-group">
+        <label for="email">Email ID</label>
+        <input type="text" placeholder="Email" id="email" oninput="validateEmail()">
+        <div class="error"></div>
+        </div>
+        <br>
+        
+        <div class="input-group">
+        <label for="pass">Password</label>
+        <input type="password" placeholder="Password" id="pass" oninput="validatepass()">
+        <div class="error"></div>
+        </div>
+        <br>
+
+        <div class="input-group">
+        <label for="cpass">Confirm password</label>
+        <input type="password" placeholder="Confirm Password" id="cpass" oninput="validatecpass()">
+        <div class="error"></div>
+        </div>
+
+        <button>Sign up</button>
+        <div id="result"></div>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
